@@ -9,13 +9,13 @@ module.exports = function (RED) {
         this.crontab = n.crontab;
         var node = this;
         
-		node.on('input', function (msg) {
-			'use strict'; // We will be using eval() so lets get a bit of safety using strict
-			// If the node's topic is set, copy to output msg
-			if ( node.topic !== '' ) {
-				msg.topic = node.topic;
-			} // If nodes topic is blank, the input msg.topic is already there
-		});
+	node.on('input', function (msg) {
+		'use strict'; // We will be using eval() so lets get a bit of safety using strict
+		// If the node's topic is set, copy to output msg
+		if ( node.topic !== '' ) {
+			msg.topic = node.topic;
+		} // If nodes topic is blank, the input msg.topic is already there
+	});
 
         try {
             parser.parseExpression(n.crontab);
