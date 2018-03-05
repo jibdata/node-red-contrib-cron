@@ -6,10 +6,11 @@
         outputs: 1,
         defaults: {
             name: { value: "" },
+            topic: { value: "" },
             crontab: { value: "* * * * * *", required: true }
         }, 
         label: function() {
-            return this.name || "CRON"
+            return this.name || "CRONJIB"
         }
     });
 </script>
