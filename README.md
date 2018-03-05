@@ -11,3 +11,4 @@ Starting a separate project fixing some issues.
 # Changelog:
 05.03.2018:
 - Created a fork from chameleonbr/node-red-contrib-cron
+- Fixed topic handling in msg
